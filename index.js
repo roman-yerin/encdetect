@@ -9,7 +9,7 @@ module.exports = function (buf) {
 	if (ascii) return {encoding:'ascii', confidence:1}
 
 	for (var cp of ['windows-1251','utf-8','utf16-le','koi8-r']){
-		var str = iconv.decode(buf, cp)
+		var str = iconv.decode(buf, cp).toLowerCase()
 		var ngrams = ngram.bigram(str)
 		for(var n of ngrams){
 			if (rus[n])	res[cp] = res[cp]?res[cp]+rus[n]:rus[n]
