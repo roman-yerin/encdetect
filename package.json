@@ -1,0 +1,15 @@
+{
+  "name": "encdetect",
+  "version": "1.0.0",
+  "description": "Encoding detection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roman Yerin",
+  "license": "MIT",
+  "dependencies": {
+    "iconv-lite": "^0.4.19",
+    "n-gram": "^1.0.0"
+  }
+}
